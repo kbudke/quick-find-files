@@ -9,6 +9,8 @@ group :production do
 end
 
 
+#slick carousel image slides
+gem 'jquery-slick-rails', '~> 1.6', '>= 1.6.0.2'
 # Use Puma as the app server
 gem 'puma', '~> 3.0'
 # Use SCSS for stylesheets

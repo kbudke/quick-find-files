@@ -15,3 +15,35 @@ Direction glyphs
 <i class="fa fa-arrow-down" aria-hidden="true"> (Down) </i>
 <i class="fa fa-arrow-left" aria-hidden="true"> (Left) </i>
 <i class="fa fa-arrow-right" aria-hidden="true"> (Right) </i>
+
+
+<br>
+
+Sortable table
+
+Include the Javascript library, by putting a link to it in the HEAD of your page, like so:
+<script src="sorttable.js"></script>
+Mark your table as a sortable one by giving it a class of "sortable":
+<table class="sortable">
+Note that the library's JavaScript file is called sorttable (two Ts), but the class you add to the table is sortable (one T).
+And that's all you need. Your table will now have column sorting available by clicking the headers. For niceness, you might want to add the following styles to your stylesheet, or make up some of your own based on this:
+
+
+/* Sortable tables */
+table.sortable thead {
+    background-color:#eee;
+    color:#666666;
+    font-weight: bold;
+    cursor: default;
+}
+
+<br>
+
+
+Slick Courasel
+
+	<div class="single-item">
+		<% @images.each do |image| %> 
+			<div><%= image_tag image, alt: image, class: "travel-pics" %></div>
+		<% end %>
+	</div>
